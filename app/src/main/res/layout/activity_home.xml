@@ -1,0 +1,84 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/storeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POIZON"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название товара"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/sizeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Размер товара"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/priceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цена товара"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выбрать фото"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/poizon"/>
+
+    <ImageView
+        android:id="@+id/itemImageView"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_placeholder" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить товар"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/poizon"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обновить товар"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/poizon"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить товар"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/poizon"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
